@@ -1,5 +1,20 @@
 body {
   overflow-x: scroll;
+  background-color: rgb(245, 245, 245);
+}
+
+.duotone-buttons {
+  margin-block: 15px;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: whitesmoke;
+  /* border: 3px solid var(--campagna-red);
+  background-color: var(--campagna-red); */
+  padding: 7.5px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 
 main {
@@ -14,11 +29,15 @@ main {
   background-repeat: no-repeat;
 }
 
-.main-title {
+.container-main {
   margin: 0px;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 7%;
+}
+
+.main-title {
+  margin: 0px;
   font-size: 65px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: lighter;
@@ -28,9 +47,6 @@ main {
 
 .main-text {
   margin: 0px;
-  position: relative;
-  top: 50%;
-  left: 7%;
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: lighter;
@@ -39,15 +55,13 @@ main {
 }
 
 .intro {
-  height: auto;
-  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(245, 245, 245);
   flex-wrap: wrap;
   padding: 75px;
-  gap: 90px;
+  gap: 70px;
 }
 
 .intro-image {
@@ -58,34 +72,158 @@ main {
 
 .container-intro-right {
   width: 600px;
-  /* border: 5px solid var(--campagna-red); */
+  padding: 20px 30px;
+  border: 5px solid var(--campagna-red);
 }
 
 .intro-title {
-  font-size: 45px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 15px;
+  font-size: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: var(--campagna-red);
 }
 
 .intro-text {
-  font-size: 20px;
+  font-size: 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .intro-button {
-  margin-block: 15px;
-  font-size: 15px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  letter-spacing: 1.2px;
-  color: whitesmoke;
   border: 3px solid var(--campagna-red);
   background-color: var(--campagna-red);
-  padding: 7.5px;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
 }
 
 .intro-button:hover {
   color: var(--campagna-red);
   background-color: whitesmoke;
+}
+
+hr {
+  border: none;
+  border-top: 5px solid;
+  border-image:  linear-gradient(45deg, rgba(0,150,65,1) 0%, rgba(255,255,255,1) 50%, rgba(238,0,0,1) 100%);
+  border-image-slice: 1;
+  height: 5px;
+  width: 85%;
+  margin-block: 30px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 50px auto 100px;
+  flex-wrap: wrap;
+}
+
+.container-products-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
+  margin: 25px;
+}
+
+.products-long, .products-short {
+  padding: 10px;
+  width: 92.5%;
+}
+
+.products-long {
+  background-image: url(../images/index/long_pasta.jpg);
+  background-position: center;
+  background-size: cover;
+  /* opacity: 0.5; */
+}
+
+.container-long, .container-short, .container-sauces, .container-oils {
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.products-title {
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:aliceblue;
+  letter-spacing: 1.2px;
+}
+
+/* .container-long > h3 {
+  color: lightblue;
+}
+
+.container-long > p {
+  color: lightblue;
+} */
+
+.products-text {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:azure;
+  line-height: 27.5px;
+}
+
+.long-button, .short-button {
+  border: 3px solid whitesmoke;
+  background-color: whitesmoke;
+  color:rgb(23, 23, 23);
+}
+
+.long-button:hover, .short-button:hover {
+  border: 3px solid rgb(23, 23, 23);
+  background-color: rgb(23, 23, 23);
+  color: whitesmoke;
+}
+
+.products-short {
+  background-image: url(../images/index/short_pasta.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container-products-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 25px;
+}
+
+.products-sauces {
+  background-image: url(../images/index/sauces2.jpg);
+  background-position: bottom 30% left 20%;
+  background-size: cover;
+  height: 100%;
+}
+
+.sauces-button {
+  border: 3px solid rgb(192, 46, 46);
+  background-color:rgb(192, 46, 46);
+  color:whitesmoke;
+}
+
+.sauces-button:hover {
+  border: 3px solid whitesmoke;
+  background-color: whitesmoke;
+  color: rgb(192, 46, 46);
+}
+
+.products-oils {
+  background-image: url(../images/index/olive_oil2.jpg);
+  background-position: bottom 20% left 55%;
+  background-size: cover;
+  height: 100%;
+}
+
+.oils-button {
+  border: 3px solid #baa23e;
+  background-color:#baa23e;
+  color:whitesmoke;
+}
+
+.oils-button:hover {
+  border: 3px solid whitesmoke;
+  background-color:whitesmoke;
+  color:#baa23e;
 }
