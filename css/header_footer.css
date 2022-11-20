@@ -5,8 +5,8 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   overflow-x: hidden;
   min-height: 100vh;
@@ -17,9 +17,13 @@ header {
   height: auto;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  top: 0px;
-  background-color: rgb(234, 234, 234);
+  position: fixed;
+  background-color: rgba(234, 234, 234, 0.55);
+  z-index: 1;
+}
+
+header > * {
+  opacity: 1;
 }
 
 .campagna-header {
@@ -27,7 +31,7 @@ header {
   height: 165px;
   max-height: 100%;
   width: auto;
-  margin-left: 40px;
+  margin-left: 85px;
 }
 
 nav {
@@ -42,8 +46,6 @@ nav {
 }
 
 .search-bar {
-  /* background-color:burlywood;
-  border: 4px solid cadetblue; */
   display: flex;
   justify-content: space-between;
   width: 350px;
@@ -58,15 +60,17 @@ nav {
   border: none;
   border-bottom: 3px solid #006B2D;
   outline: none;
-  background-color: rgb(234, 234, 234);
+  background-color: transparent;
   font-size: 19px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:#006B2D;
+  letter-spacing: 1.3px;
 }
 
 .search-input::placeholder {
-  font-size: 15px;
-  letter-spacing: 1.6px;
+  font-size: 16.5px;
+  letter-spacing: 1.5px;
+  color: #002c13;
 }
 
 .search-button {
@@ -125,12 +129,17 @@ nav {
   letter-spacing: 3px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
+  transition: all 0.3s ease-out;
+}
+
+.nav-text:hover {
+  color: #007332;
 }
 
 footer {
   width: 100vw;
   height: auto;
-  position: absolute;
+  position: static;
   bottom: 0px;
   background-color:#d9d9d9;
 }
@@ -283,7 +292,8 @@ footer {
 }
 
 .github-link {
-  margin-right: 37.5px;
+  position: relative;
+  right: 37.5px;
 }
 
 .github-icon {

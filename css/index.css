@@ -1,0 +1,91 @@
+body {
+  overflow-x: scroll;
+}
+
+main {
+  max-width: 100vw;
+}
+
+.main-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/index/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-title {
+  margin: 0px;
+  position: relative;
+  top: 50%;
+  left: 7%;
+  font-size: 65px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+  color: rgba(255, 255, 255, 0.827);
+}
+
+.main-text {
+  margin: 0px;
+  position: relative;
+  top: 50%;
+  left: 7%;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.827);
+}
+
+.intro {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 232, 232);
+  flex-wrap: wrap;
+  padding: 75px;
+  gap: 90px;
+}
+
+.intro-image {
+  width: 550px;
+  height: auto;
+  max-height: 700px;
+}
+
+.container-intro-right {
+  width: 600px;
+  /* border: 5px solid var(--campagna-red); */
+}
+
+.intro-title {
+  font-size: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--campagna-red);
+}
+
+.intro-text {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intro-button {
+  margin-block: 15px;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1.2px;
+  color: whitesmoke;
+  border: 3px solid var(--campagna-red);
+  background-color: var(--campagna-red);
+  padding: 7.5px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.intro-button:hover {
+  color: var(--campagna-red);
+  background-color: whitesmoke;
+}
