@@ -155,6 +155,7 @@ footer {
 .container-footer {
   display: flex;
   height: auto;
+  padding: 50px;
 }
 
 .container-footer-left {
@@ -163,7 +164,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-block: 25px;
+  /* margin-block: 25px; */
 }
 
 .container-footer-right {
