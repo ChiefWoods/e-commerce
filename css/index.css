@@ -6,7 +6,7 @@ body {
 .duotone-buttons {
   margin-block: 15px;
   font-size: 15px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 600;
   letter-spacing: 1.2px;
   color: whitesmoke;
@@ -16,6 +16,8 @@ body {
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
+
+/* Main */
 
 main {
   max-width: 100vw;
@@ -54,6 +56,8 @@ main {
   color: rgba(255, 255, 255, 0.827);
 }
 
+/* Intro */
+
 .intro {
   display: flex;
   justify-content: center;
@@ -79,7 +83,7 @@ main {
 .intro-title {
   margin-top: 15px;
   font-size: 50px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: var(--campagna-red);
 }
 
@@ -98,15 +102,19 @@ main {
   background-color: whitesmoke;
 }
 
+/* Hr */
+
 hr {
   border: none;
   border-top: 5px solid;
-  border-image:  linear-gradient(45deg, rgba(0,150,65,1) 0%, rgba(255,255,255,1) 50%, rgba(238,0,0,1) 100%);
+  border-image: linear-gradient(45deg, rgba(0, 150, 65, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(238, 0, 0, 1) 100%);
   border-image-slice: 1;
   height: 5px;
   width: 85%;
   margin-block: 30px;
 }
+
+/* Products */
 
 .products {
   display: flex;
@@ -125,82 +133,112 @@ hr {
   margin: 25px;
 }
 
-.products-long, .products-short {
+.container-products-right {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+  margin: 25px;
+}
+
+.container-long,
+.container-short,
+.container-sauces,
+.container-oils {
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.products-long,
+.products-short {
   padding: 10px;
   width: 92.5%;
 }
 
-.products-long {
-  background-image: url(../images/index/long_pasta.jpg);
-  background-position: center;
-  background-size: cover;
-  /* opacity: 0.5; */
+.products-box {
+  position: relative;
+  z-index: 1;
 }
 
-.container-long, .container-short, .container-sauces, .container-oils {
-  padding: 10px;
-  padding-left: 20px;
+.products-box::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  transition: all 0.35s ease-in-out;
+}
+
+.products-box:hover:before {
+  opacity: 1;
+  scale: 1.04;
 }
 
 .products-title {
   font-size: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color:aliceblue;
+  color: aliceblue;
   letter-spacing: 1.2px;
 }
-
-/* .container-long > h3 {
-  color: lightblue;
-}
-
-.container-long > p {
-  color: lightblue;
-} */
 
 .products-text {
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color:azure;
+  color: azure;
   line-height: 27.5px;
 }
 
-.long-button, .short-button {
-  border: 3px solid whitesmoke;
-  background-color: whitesmoke;
-  color:rgb(23, 23, 23);
+.products-long::before {
+  background-image: url(../images/index/long_pasta.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.long-button:hover, .short-button:hover {
-  border: 3px solid rgb(23, 23, 23);
-  background-color: rgb(23, 23, 23);
-  color: whitesmoke;
-}
-
-.products-short {
+.products-short::before {
   background-image: url(../images/index/short_pasta.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.container-products-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  margin: 25px;
-}
-
-.products-sauces {
+.products-sauces::before {
   background-image: url(../images/index/sauces2.jpg);
   background-position: bottom 30% left 20%;
   background-size: cover;
-  height: 100%;
+  /* height: 100%;
+  flex-basis: 250px;
+  flex-grow: 1; */
+}
+
+.products-oils::before {
+  background-image: url(../images/index/olive_oil2.jpg);
+  background-position: bottom 20% left 55%;
+  background-size: cover;
+  /* height: 100%;
+  flex-basis: 250px;
+  flex-grow: 1; */
+}
+
+.long-button,
+.short-button {
+  border: 3px solid whitesmoke;
+  background-color: whitesmoke;
+  color: rgb(23, 23, 23);
+}
+
+.long-button:hover,
+.short-button:hover {
+  border: 3px solid rgb(23, 23, 23);
+  background-color: rgb(23, 23, 23);
+  color: whitesmoke;
 }
 
 .sauces-button {
   border: 3px solid rgb(192, 46, 46);
-  background-color:rgb(192, 46, 46);
-  color:whitesmoke;
+  background-color: rgb(192, 46, 46);
+  color: whitesmoke;
 }
 
 .sauces-button:hover {
@@ -209,21 +247,16 @@ hr {
   color: rgb(192, 46, 46);
 }
 
-.products-oils {
-  background-image: url(../images/index/olive_oil2.jpg);
-  background-position: bottom 20% left 55%;
-  background-size: cover;
-  height: 100%;
-}
-
 .oils-button {
   border: 3px solid #baa23e;
-  background-color:#baa23e;
-  color:whitesmoke;
+  background-color: #baa23e;
+  color: whitesmoke;
 }
 
 .oils-button:hover {
   border: 3px solid whitesmoke;
-  background-color:whitesmoke;
-  color:#baa23e;
+  background-color: whitesmoke;
+  color: #baa23e;
 }
+
+/* Add media query to rearrange container-products-right */
