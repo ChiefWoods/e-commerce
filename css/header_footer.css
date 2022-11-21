@@ -1,9 +1,21 @@
+.duotone-buttons {
+  margin-block: 15px;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: whitesmoke;
+  /* border: 3px solid var(--campagna-red);
+  background-color: var(--campagna-red); */
+  padding: 7.5px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
 html {
   --campagna-red: #EE0000;
   --campagna-green: #009641;
   --campagna-white: #ffffff;
-  min-height: 100vh;
-  max-width: 100%;
 }
 
 body {
@@ -12,6 +24,10 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: rgb(245, 245, 245);
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -144,12 +160,18 @@ nav {
   margin-right: 7.5px;
 }
 
+/* Main */
+
+main {
+  flex: 1;
+}
+
 /* Footer */
 
 footer {
   width: 100vw;
   height: auto;
-  position: static;
+  position: relative;
   bottom: 0px;
   background-color:#d9d9d9;
 }

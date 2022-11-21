@@ -1,0 +1,31 @@
+header {
+  position: static;
+}
+
+/* Main */
+
+.main-section {
+  margin: 75px;
+}
+
+.main-title {
+  font-size: 35px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--campagna-green);
+}
+
+.main-text {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#16934c;
+}
+
+.main-button {
+  border: 3px solid var(--campagna-green);
+  background-color: var(--campagna-green);
+}
+
+.main-button:hover {
+  background-color: whitesmoke;
+  color: var(--campagna-green);
+}

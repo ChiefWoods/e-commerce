@@ -1,17 +1,3 @@
-.duotone-buttons {
-  margin-block: 15px;
-  font-size: 15px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  color: whitesmoke;
-  /* border: 3px solid var(--campagna-red);
-  background-color: var(--campagna-red); */
-  padding: 7.5px;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
 /* Main */
 
 main {
