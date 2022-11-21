@@ -120,15 +120,27 @@ hr {
   display: flex;
   justify-content: center;
   width: 80%;
-  margin: 50px auto 100px;
+  margin: 75px auto;
   flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .products {
+    flex-direction: column;
+    gap: 0px;
+    width: 70%;
+  }
+
+  .container-products-right {
+    flex-direction: column;
+  }
 }
 
 .container-products-left {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: stretch;
   gap: 50px;
   margin: 25px;
 }
@@ -149,13 +161,13 @@ hr {
   padding-left: 20px;
 }
 
-.products-long,
+/* .products-long,
 .products-short {
-  padding: 10px;
   width: 92.5%;
-}
+} */
 
 .products-box {
+  padding: 10px;
   position: relative;
   z-index: 1;
 }
@@ -258,5 +270,3 @@ hr {
   background-color: whitesmoke;
   color: #baa23e;
 }
-
-/* Add media query to rearrange container-products-right */
