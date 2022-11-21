@@ -16,6 +16,7 @@ html {
   --campagna-red: #EE0000;
   --campagna-green: #009641;
   --campagna-white: #ffffff;
+  --pasta-yellow: #CAA96B;
 }
 
 body {
@@ -169,7 +170,7 @@ main {
 /* Footer */
 
 footer {
-  width: 100vw;
+  width: 100%;
   height: auto;
   position: relative;
   bottom: 0px;

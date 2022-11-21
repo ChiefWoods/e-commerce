@@ -1,31 +1,48 @@
+body {
+  overflow-x: scroll;
+}
+
 header {
   position: static;
 }
 
 /* Main */
 
+main {
+  background-image: url(../images/cart/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 625px;
+  height: 625px;
+  position: relative;
+}
+
 .main-section {
-  margin: 75px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  margin: 30px;
 }
 
 .main-title {
-  font-size: 35px;
+  font-size: 37.5px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--campagna-green);
+  color: var(--pasta-yellow);
+  margin-top: 0px;
 }
 
 .main-text {
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color:#16934c;
+  color: var(--pasta-yellow);
 }
 
 .main-button {
-  border: 3px solid var(--campagna-green);
-  background-color: var(--campagna-green);
+  border: 3px solid var(--pasta-yellow);
+  background-color: var(--pasta-yellow);
 }
 
 .main-button:hover {
   background-color: whitesmoke;
-  color: var(--campagna-green);
+  color: var(--pasta-yellow);
 }
