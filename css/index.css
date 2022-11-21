@@ -161,11 +161,6 @@ hr {
   padding-left: 20px;
 }
 
-/* .products-long,
-.products-short {
-  width: 92.5%;
-} */
-
 .products-box {
   padding: 10px;
   position: relative;
@@ -219,18 +214,12 @@ hr {
   background-image: url(../images/index/sauces2.jpg);
   background-position: bottom 30% left 20%;
   background-size: cover;
-  /* height: 100%;
-  flex-basis: 250px;
-  flex-grow: 1; */
 }
 
 .products-oils::before {
   background-image: url(../images/index/olive_oil2.jpg);
   background-position: bottom 20% left 55%;
   background-size: cover;
-  /* height: 100%;
-  flex-basis: 250px;
-  flex-grow: 1; */
 }
 
 .long-button,
