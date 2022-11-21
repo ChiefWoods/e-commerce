@@ -2,6 +2,8 @@ html {
   --campagna-red: #EE0000;
   --campagna-green: #009641;
   --campagna-white: #ffffff;
+  min-height: 100vh;
+  max-width: 100%;
 }
 
 body {
@@ -9,13 +11,13 @@ body {
   padding: 0px;
   box-sizing: border-box;
   overflow-x: hidden;
-  min-height: 100vh;
+  background-color: rgb(245, 245, 245);
 }
 
 /* Header */
 
 header {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -164,7 +166,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-block: 25px; */
 }
 
 .container-footer-right {
