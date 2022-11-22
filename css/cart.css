@@ -38,6 +38,7 @@ main {
 }
 
 .main-button:hover {
+  border: 3px solid whitesmoke;
   background-color: whitesmoke;
   color: var(--pasta-yellow);
 }
