@@ -67,6 +67,11 @@ header {
   accent-color: black;
 }
 
+.toggle-text {
+  margin-left: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .birthdate-input {
   width: 50%;
 }

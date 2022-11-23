@@ -162,7 +162,7 @@ hr {
 
 .products-box:hover:before {
   opacity: 1;
-  scale: 1.04;
+  transform: scale(1.05);
 }
 
 .products-title {
