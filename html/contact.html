@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="../css/header_footer.css">
   <link rel="stylesheet" href="../css/contact.css">
   <link rel="icon" type="image/x-icon" href="../icons/tab_pasta.png">
-  <script src="script.js"></script>
+  <script src="../script/header_footer.js"></script>
+  <script src="../script/contact.js"></script>
 </head>
 
 <body>
@@ -57,11 +58,11 @@
           <h1 class="message-title">Have a question? Or a suggestion for a product?<br>Let us know what you think!</h1>
           <form action="" method="post" class="container-inputs">
             <div class="container-name-email">
-              <input name="name" placeholder="Name" class="input-name">
-              <input name="email" placeholder="Email Address" class="input-email">
+              <input name="name" placeholder="Name" class="name-input">
+              <input name="email" placeholder="Email Address" class="email-input">
             </div>
             <textarea name="message" placeholder="Message" class="textarea-message"></textarea>
-            <button class="message-button duotone-buttons">SEND</button>
+            <button type="button" class="message-button duotone-buttons" onclick="validateForm()">SEND</button>
           </form>
         </div>
       </div>
@@ -92,7 +93,7 @@
           <span class="subscribe-text" id="subscribe-text-2">TO KNOW ABOUT OUR NEW PRODUCTS</span>
           <form action="" method="get" class="subscribe-bar">
             <input type="text" class="subscribe-input" placeholder="Email address">
-            <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+            <button type="button" class="subscribe-button" onclick="validateSubscribe()">SUBSCRIBE</button>
           </form>
         </div>
       </div>

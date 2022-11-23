@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/header_footer.css">
   <link rel="stylesheet" href="../css/login.css">
   <link rel="icon" type="image/x-icon" href="../icons/tab_pasta.png">
+  <script src="../script/header_footer.js"></script>
   <script src="../script/login.js"></script>
 </head>
 
@@ -48,7 +49,8 @@
           <div class="container-input">
             <label for="password" class="password-title">PASSWORD</label>
             <input name="password" type="password" class="password-input">
-            <span class="password-requirement">Password must be at least 8 characters, and contain both letters and numbers.</span>
+            <span class="password-requirement">Password must be at least 8 characters, and contain both letters and
+              numbers.</span>
           </div>
           <div class="container-toggle">
             <input name="toggle" type="checkbox" class="password-toggle" onclick="togglePassword()">
@@ -91,7 +93,7 @@
           <span class="subscribe-text" id="subscribe-text-2">TO KNOW ABOUT OUR NEW PRODUCTS</span>
           <form action="" method="get" class="subscribe-bar">
             <input type="text" class="subscribe-input" placeholder="Email address">
-            <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+            <button type="button" class="subscribe-button" onclick="validateSubscribe()">SUBSCRIBE</button>
           </form>
         </div>
       </div>

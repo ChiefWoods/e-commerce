@@ -32,7 +32,8 @@ header {
   font-size: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--pasta-yellow);
-  margin-top: 0px;
+  /* margin-top: 0px; */
+  margin-block: 0px 30px;
 }
 
 .container-input {
