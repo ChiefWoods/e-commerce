@@ -10,17 +10,17 @@ function togglePassword() {
 function validateLogin() {
   const emailInput = document.querySelector(".email-input");
   const passwordInput = document.querySelector(".password-input");
-  if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)) && !(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(passwordInput.value))) {
-    alert("Invalid email address and password!");
-    emailInput.value = "";
-    passwordInput.value = "";
-  } else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value))) {
+  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+  if (!(emailRegex.test(emailInput.value))) {
     alert("Invalid email address!")
     emailInput.value = "";
-  } else if (!(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(passwordInput.value))) {
+  } else if (!(passwordRegex.test(passwordInput.value))) {
     alert("Wrong password!");
     passwordInput.value = "";
   } else {
-    alert("Login successful");
+    alert("Login successful.");
+    emailInput.value = "";
+    passwordInput.value = "";
   }
 }

@@ -1,0 +1,94 @@
+header {
+  position: static;
+}
+
+/* Main */
+
+.main-section {
+  width: 100%;
+}
+
+.container-main {
+  margin: 75px;
+}
+
+/* Register */
+
+.register-title {
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--pasta-yellow);
+  margin-top: 0px;
+}
+
+.container-register {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 20px;
+  width: 50%;
+  min-width: 500px;
+  margin-block: 45px;
+}
+
+.titles {
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--pasta-yellow);
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+
+.inputs {
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.password-input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.password-requirement {
+  display: block;
+  font-size: 12.5px;
+  margin-top: 5px;
+}
+
+.container-toggle {
+  display: flex;
+  margin-block: 10px 5px;
+}
+
+.password-toggle {
+  display: inline;
+  scale: 1.25;
+  accent-color: black;
+}
+
+.birthdate-input {
+  width: 50%;
+}
+
+.required {
+  color: crimson;
+}
+
+.register-button {
+  width: 200px;
+  background-color: rgb(69, 69, 69);
+  border-color: rgb(69, 69, 69);
+  border-style: none;
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.register-button:hover {
+  background-color: rgb(120, 120, 120);
+  border-color: rgb(120, 120, 120);
+}
+
+.invalid {
+  border: 2px solid red;
+}
