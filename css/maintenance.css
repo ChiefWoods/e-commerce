@@ -1,0 +1,24 @@
+header {
+  position: static;
+}
+
+/* Main */
+
+.main-section {
+  margin: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maintenance-icon {
+  height: 30px;
+}
+
+.main-title {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--pasta-yellow);
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
