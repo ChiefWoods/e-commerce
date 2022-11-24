@@ -5,8 +5,6 @@
   font-weight: 600;
   letter-spacing: 1.2px;
   color: whitesmoke;
-  /* border: 3px solid var(--campagna-red);
-  background-color: var(--campagna-red); */
   padding: 7.5px;
   cursor: pointer;
   transition: all 0.3s ease-out;
@@ -38,7 +36,6 @@ header {
   height: auto;
   display: flex;
   justify-content: space-between;
-  position: fixed;
   background-color: rgba(234, 234, 234, 0.55);
   z-index: 2;
 }
@@ -48,7 +45,7 @@ header > * {
 }
 
 .campagna-header {
-  display: inline-block;
+  display: inline;
   height: 165px;
   max-height: 100%;
   width: auto;
@@ -175,6 +172,7 @@ footer {
   position: relative;
   bottom: 0px;
   background-color:#d9d9d9;
+  z-index: 2;
 }
 
 .container-footer {

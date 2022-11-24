@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Short Pasta | Campagna</title>
+  <link rel="stylesheet" href="../css/header_footer.css">
+  <link rel="stylesheet" href="../css/short_pasta.css">
+  <link rel="icon" type="image/x-icon" href="../icons/tab_pasta.png">
+  <script src="../script/header_footer.js"></script>
+  <script src="../script/purchase.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html"><img src="../images/logo.png" class="campagna-header" alt="logo of Campagna"></a>
+    <nav>
+      <div class="container-nav-top">
+        <form action="" method="get" class="search-bar" spellcheck="false">
+          <input type="text" class="search-input" placeholder="Search">
+          <button type="submit" class="search-button" onclick="deadButton()"><img
+              src="../icons/magnifying-glass-solid.svg" id="search-icon" alt="icon of magnifying glass"></button>
+        </form>
+        <ul class="container-nav-icons">
+          <li><a href="./cart.html" class="nav-icons-links"><img src="../icons/cart-shopping-solid.svg"
+                class="nav-icons" alt="icon of shopping cart"></a></li>
+          <li><a href="./login.html" class="nav-icons-links"><img src="../icons/user-solid.svg" class="nav-icons"
+                alt="icon of user symbol"></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="container-nav-bottom">
+        <li><a href="./about.html" class="nav-links"><span class="nav-text">ABOUT</span></a></li>
+        <li><a href="./products.html" class="nav-links"><span class="nav-text">PRODUCTS</span></a></li>
+        <li><a href="./recipes.html" class="nav-links"><span class="nav-text">RECIPES</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container-main">
+      <h1 class="main-title">SHORT<br>PASTA</h1>
+    </section>
+
+    <section class="intro">
+      <p class="intro-text">These bronze cut short pasta consists of many nooks and crannies to hold onto delicious
+        sauce, making them versatile staples for any dish.</p>
+    </section>
+
+    <section class="gallery">
+      <div class="container-gallery">
+        <div class="preview" id="preview-fusilli">
+          <img src="../images/short_pasta/fusilli.jpg" alt="fusilli" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Fusilli</h1>
+            <h2 class="preview-text">500g</h2>
+            <a href="#product-fusilli" class="preview-link">
+              <button class="preview-button duotone-buttons">RM7.0</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-penne-rigate">
+          <img src="../images/short_pasta/penne_rigate.jpg" alt="penne rigate" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Penne Rigate</h1>
+            <h2 class="preview-text">500g</h2>
+            <a href="#product-penne-rigate" class="preview-link">
+              <button class="preview-button duotone-buttons">RM7.0</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-mezzi-gomiti">
+          <img src="../images/short_pasta/mezzi_gomiti.jpg" alt="mezzi gomiti" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Mezzi Gomiti</h1>
+            <h2 class="preview-text">500g</h2>
+            <a href="#product-mezzi-gomiti" class="preview-link">
+              <button class="preview-button duotone-buttons">RM7.0</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-rigatoni">
+          <img src="../images/short_pasta/rigatoni.jpg" alt="rigatoni" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Rigatoni</h1>
+            <h2 class="preview-text">500g</h2>
+            <a href="#product-rigatoni" class="preview-link">
+              <button class="preview-button duotone-buttons">RM7.0</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-tofette">
+          <img src="../images/short_pasta/tofette.jpg" alt="tofette" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Tofette</h1>
+            <h2 class="preview-text">500g</h2>
+            <a href="#product-tofette" class="preview-link">
+              <button class="preview-button duotone-buttons">RM7.0</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-farfalle">
+          <img src="../images/short_pasta/farfalle.jpg" alt="farfalle" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Farfalle</h1>
+            <h2 class="preview-text">500g</h2>
+            <a href="#product-farfalle" class="preview-link">
+              <button class="preview-button duotone-buttons">RM7.0</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-cannelloni">
+          <img src="../images/short_pasta/cannelloni.jpg" alt="cannelloni" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Cannelloni</h1>
+            <h2 class="preview-text">500g</h2>
+            <a href="#product-cannelloni" class="preview-link">
+              <button class="preview-button duotone-buttons">RM7.0</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-lasagne">
+          <img src="../images/short_pasta/lasagne.jpg" alt="lasagne" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Lasagne</h1>
+            <h2 class="preview-text">500g, 20 sheets</h2>
+            <a href="#product-lasagne" class="preview-link">
+              <button class="preview-button duotone-buttons">RM7.0</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div id="product-fusilli" class="overlay">
+        <div class="container-product">
+          <a href="#preview-fusilli" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/short_pasta/fusilli.jpg" alt="fusilli" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Fusilli</h1>
+              <p class="product-text">500 grams.<br>Also handy for opening wine bottles.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM7.0</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-penne-rigate" class="overlay">
+        <div class="container-product">
+          <a href="#preview-penne-rigate" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/short_pasta/penne_rigate.jpg" alt="penne-rigate" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Penne Rigate</h1>
+              <p class="product-text">500 grams.<br>This looks nothing like a ridged pen.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM7.0</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-mezzi-gomiti" class="overlay">
+        <div class="container-product">
+          <a href="#preview-mezzi-gomiti" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/short_pasta/mezzi_gomiti.jpg" alt="mezzi-gomiti" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Mezzi Gomiti</h1>
+              <p class="product-text">500 grams.<br>The pasta with many names.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM7.0</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-rigatoni" class="overlay">
+        <div class="container-product">
+          <a href="#preview-rigatoni" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/short_pasta/rigatoni.jpg" alt="rigatoni" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Rigatoni</h1>
+              <p class="product-text">500 grams.<br>No one knows why Tony is being rigged.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM7.0</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-tofette" class="overlay">
+        <div class="container-product">
+          <a href="#preview-tofette" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/short_pasta/tofette.jpg" alt="tofette" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Tofette</h1>
+              <p class="product-text">500 grams.<br>Edible sea shells.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM7.0</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-farfalle" class="overlay">
+        <div class="container-product">
+          <a href="#preview-farfalle" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/short_pasta/farfalle.jpg" alt="farfalle" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Farfalle</h1>
+              <p class="product-text">500 grams.<br>Dine with class.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM7.0</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-cannelloni" class="overlay">
+        <div class="container-product">
+          <a href="#preview-cannelloni" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/short_pasta/cannelloni.jpg" alt="cannelloni" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Cannelloni</h1>
+              <p class="product-text">500 grams.<br>Stuff me please.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM7.0</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-lasagne" class="overlay">
+        <div class="container-product">
+          <a href="#preview-lasagne" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/short_pasta/lasagne.jpg" alt="lasagne" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Lasagne</h1>
+              <p class="product-text">500 grams, 20 sheets.<br>Something something orange cat.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM7.0</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <div class="container-footer-left">
+        <div class="container-footer-left-top">
+          <a href="../index.html"><img src="../images/logo.png" class="campagna-footer" alt="logo of Campagna"></a>
+          <ul class="social-links">
+            <li><a href="https://www.instagram.com/campagnafood/" target="_blank"><img src="../icons/instagram.svg"
+                  class="footer-icons" alt="icon of Instagram"></a></li>
+            <li><a href="https://www.tiktok.com/@notanothercookingshow" target="_blank"><img src="../icons/tiktok.svg"
+                  class="footer-icons" alt="icon of TikTok"></a>
+            </li>
+            <li><a href="https://www.facebook.com/campagnafoodmediterraneanclassics/" target="_blank"><img
+                  src="../icons/facebook.svg" class="footer-icons" alt="icon of Facebook"></a></li>
+            <li><a href="https://mobile.twitter.com/ChiiYuen" target="_blank"><img src="../icons/twitter.svg"
+                  class="footer-icons" alt="icon of Twitter"></a></li>
+            <li><a href="https://www.youtube.com/channel/UC-rwYtchgxZbZlkUAAKA3pg" target="_blank"><img
+                  src="../icons/youtube.svg" class="footer-icons" alt="icon of YouTube"></a></li>
+          </ul>
+        </div>
+        <div class="container-footer-left-bottom">
+          <span class="subscribe-text" id="subscribe-text-1">BE THE FIRST</span>
+          <span class="subscribe-text" id="subscribe-text-2">TO KNOW ABOUT OUR NEW PRODUCTS</span>
+          <form action="" method="get" class="subscribe-bar">
+            <input type="text" class="subscribe-input" placeholder="Email address">
+            <button type="button" class="subscribe-button" onclick="validateSubscribe()">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+      <div class="container-footer-right">
+        <div class="container-footer-right-1">
+          <span class="footer-titles">QUICK LINKS</span>
+          <ul class="footer-menu">
+            <li><a href="./contact.html" class="footer-menu-links"><span class="footer-menu-text">Contact us</span></a>
+            </li>
+            <li><a href="#" class="footer-menu-links"><span class="footer-menu-text">Careers</span></a></li>
+            <li><a href="#" class="footer-menu-links"><span class="footer-menu-text">Locate us</span></a></li>
+          </ul>
+        </div>
+        <div class="container-footer-right-2">
+          <span class="footer-titles">LEGAL</span>
+          <ul class="footer-menu">
+            <li><a href="#" target="_blank" class="footer-menu-links"><span class="footer-menu-text">Terms and
+                  conditions</span></a></li>
+            <li><a href="#" target="_blank" class="footer-menu-links"><span class="footer-menu-text">Privacy
+                  policy</span></a></li>
+            <li><a href="https://twitter.com/mecookiemonster?lang=en" target="_blank" class="footer-menu-links"><span
+                  class="footer-menu-text">Cookie policy</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="credits">
+      <span class="made-by">Made by ChiefWoods</span>
+      <a class="github-link" href="https://github.com/ChiefWoods/e-commerce" target="_blank"><img
+          src="../icons/github.svg" class="github-icon" alt="icon of GitHub">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
