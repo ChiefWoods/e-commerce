@@ -49,7 +49,7 @@ main {
   align-items: center;
   background-color: rgb(245, 245, 245);
   flex-wrap: wrap;
-  padding: 75px;
+  margin: 75px;
   gap: 70px;
 }
 
@@ -97,6 +97,20 @@ hr {
   height: 5px;
   width: 85%;
   margin-block: 30px;
+}
+
+/* Showcase */
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  min-width: 560px;
+  min-height: 315px;
+  margin: 50px;
 }
 
 /* Products */
