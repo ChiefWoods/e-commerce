@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sauces | Campagna</title>
+  <link rel="stylesheet" href="../css/header_footer.css">
+  <link rel="stylesheet" href="../css/sauces.css">
+  <link rel="icon" type="image/x-icon" href="../icons/tab_pasta.png">
+  <script src="../script/header_footer.js"></script>
+  <script src="../script/purchase.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html"><img src="../images/logo.png" class="campagna-header" alt="logo of Campagna"></a>
+    <nav>
+      <div class="container-nav-top">
+        <form action="" method="get" class="search-bar" spellcheck="false">
+          <input type="text" class="search-input" placeholder="Search">
+          <button type="submit" class="search-button" onclick="deadButton()"><img
+              src="../icons/magnifying-glass-solid.svg" id="search-icon" alt="icon of magnifying glass"></button>
+        </form>
+        <ul class="container-nav-icons">
+          <li><a href="./cart.html" class="nav-icons-links"><img src="../icons/cart-shopping-solid.svg"
+                class="nav-icons" alt="icon of shopping cart"></a></li>
+          <li><a href="./login.html" class="nav-icons-links"><img src="../icons/user-solid.svg" class="nav-icons"
+                alt="icon of user symbol"></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="container-nav-bottom">
+        <li><a href="./about.html" class="nav-links"><span class="nav-text">ABOUT</span></a></li>
+        <li><a href="./products.html" class="nav-links"><span class="nav-text">PRODUCTS</span></a></li>
+        <li><a href="./recipes.html" class="nav-links"><span class="nav-text">RECIPES</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container-main">
+      <h1 class="main-title">SAUCES</h1>
+    </section>
+
+    <section class="intro">
+      <p class="intro-text">Packed with a healty blend of herbs and ingredients, our ready-to-eat sauces save
+        you time preparing them, getting you to the tasty part sooner.</p>
+    </section>
+
+    <section class="gallery">
+      <div class="container-gallery">
+        <div class="preview" id="preview-alfredo">
+          <img src="../images/sauces/alfredo.jpg" alt="alfredo" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Alfredo</h1>
+            <h2 class="preview-text">680g</h2>
+            <a href="#product-alfredo" class="preview-link">
+              <button class="preview-button duotone-buttons alfredo-button">RM9.5</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-arrabbiata">
+          <img src="../images/sauces/arrabbiata.jpg" alt="alfredo" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Arrabbiata</h1>
+            <h2 class="preview-text">680g</h2>
+            <a href="#product-arrabbiata" class="preview-link">
+              <button class="preview-button duotone-buttons tomato-button">RM9.5</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-bolognese">
+          <img src="../images/sauces/bolognese.jpg" alt="bolognese" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Bolognese</h1>
+            <h2 class="preview-text">680g</h2>
+            <a href="#product-bolognese" class="preview-link">
+              <button class="preview-button duotone-buttons tomato-button">RM9.5</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-four-cheese">
+          <img src="../images/sauces/four_cheese.jpg" alt="four-cheese" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Four Cheese</h1>
+            <h2 class="preview-text">680g</h2>
+            <a href="#product-four-cheese" class="preview-link">
+              <button class="preview-button duotone-buttons cheese-button">RM9.5</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-marinara">
+          <img src="../images/sauces/marinara.jpg" alt="marinara" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Marinara</h1>
+            <h2 class="preview-text">680g</h2>
+            <a href="#product-marinara" class="preview-link">
+              <button class="preview-button duotone-buttons tomato-button">RM9.5</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-pesto">
+          <img src="../images/sauces/pesto.jpg" alt="pesto" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Pesto</h1>
+            <h2 class="preview-text">680g</h2>
+            <a href="#product-pesto" class="preview-link">
+              <button class="preview-button duotone-buttons pesto-button">RM9.5</button>
+            </a>
+          </div>
+        </div>
+        <div class="preview" id="preview-puttanesca">
+          <img src="../images/sauces/puttanesca.jpg" alt="puttanesca" class="preview-image">
+          <div class="container-preview">
+            <h1 class="preview-title">Puttanesca</h1>
+            <h2 class="preview-text">680g</h2>
+            <a href="#product-puttanesca" class="preview-link">
+              <button class="preview-button duotone-buttons tomato-button">RM9.5</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div id="product-alfredo" class="overlay">
+        <div class="container-product">
+          <a href="#preview-alfredo" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/sauces/alfredo.jpg" alt="alfredo" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Alfredo</h1>
+              <p class="product-text">680 grams.<br>Creamy and white, but not what you think it is.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM9.5</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-arrabbiata" class="overlay">
+        <div class="container-product">
+          <a href="#preview-arrabbiata" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/sauces/arrabbiata.jpg" alt="arrabbiata" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Arrabbiata</h1>
+              <p class="product-text">680 grams.<br>Not for the <i>cough</i> faint hearted.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM9.5</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-bolognese" class="overlay">
+        <div class="container-product">
+          <a href="#preview-bolognese" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/sauces/bolognese.jpg" alt="bolognese" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Bolognese</h1>
+              <p class="product-text">680 grams.<br>Made with 118% real meat.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM9.5</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-four-cheese" class="overlay">
+        <div class="container-product">
+          <a href="#preview-four-cheese" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/sauces/four_cheese.jpg" alt="four-cheese" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Four Cheese</h1>
+              <p class="product-text">680 grams.<br>Least calorie dense salad dressing.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM9.5</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-marinara" class="overlay">
+        <div class="container-product">
+          <a href="#preview-marinara" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/sauces/marinara.jpg" alt="marinara" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Marinara</h1>
+              <p class="product-text">680 grams.<br>It's pizza time.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM9.5</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-pesto" class="overlay">
+        <div class="container-product">
+          <a href="#preview-pesto" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/sauces/pesto.jpg" alt="pesto" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Pesto</h1>
+              <p class="product-text">680 grams.<br>Warning: dangerously addictive.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM9.5</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product-puttanesca" class="overlay">
+        <div class="container-product">
+          <a href="#preview-puttanesca" class="exit">
+            <img src="../icons/xmark-solid.svg" alt="exit icon" class="exit-icon" onclick="exit(event)">
+          </a>
+          <div class="container-product-bottom">
+            <div class="container-product-bottom-left">
+              <img src="../images/sauces/puttanesca.jpg" alt="puttanesca" class="product-image">
+            </div>
+            <div class="container-product-bottom-right">
+              <h1 class="product-title">Puttanesca</h1>
+              <p class="product-text">680 grams.<br>Tastes fishy.</p>
+              <div class="container-price-quantity">
+                <span class="product-price">RM9.5</span>
+                <div class="container-quantity">
+                  <img src="../icons/chevron-down-solid.svg" alt="arrow down icon" class="down-icon"
+                    onclick="decreaseQuantity(event)">
+                  <span class="quantity">1</span>
+                  <img src="../icons/chevron-up-solid.svg" alt="arrow up icon" class="up-icon"
+                    onclick="increaseQuantity(event)">
+                </div>
+              </div>
+              <button type="button" class="add-cart-button duotone-buttons" onclick="addToCart(event)">ADD TO
+                CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <div class="container-footer-left">
+        <div class="container-footer-left-top">
+          <a href="../index.html"><img src="../images/logo.png" class="campagna-footer" alt="logo of Campagna"></a>
+          <ul class="social-links">
+            <li><a href="https://www.instagram.com/campagnafood/" target="_blank"><img src="../icons/instagram.svg"
+                  class="footer-icons" alt="icon of Instagram"></a></li>
+            <li><a href="https://www.tiktok.com/@notanothercookingshow" target="_blank"><img src="../icons/tiktok.svg"
+                  class="footer-icons" alt="icon of TikTok"></a>
+            </li>
+            <li><a href="https://www.facebook.com/campagnafoodmediterraneanclassics/" target="_blank"><img
+                  src="../icons/facebook.svg" class="footer-icons" alt="icon of Facebook"></a></li>
+            <li><a href="https://mobile.twitter.com/ChiiYuen" target="_blank"><img src="../icons/twitter.svg"
+                  class="footer-icons" alt="icon of Twitter"></a></li>
+            <li><a href="https://www.youtube.com/channel/UC-rwYtchgxZbZlkUAAKA3pg" target="_blank"><img
+                  src="../icons/youtube.svg" class="footer-icons" alt="icon of YouTube"></a></li>
+          </ul>
+        </div>
+        <div class="container-footer-left-bottom">
+          <span class="subscribe-text" id="subscribe-text-1">BE THE FIRST</span>
+          <span class="subscribe-text" id="subscribe-text-2">TO KNOW ABOUT OUR NEW PRODUCTS</span>
+          <form action="" method="get" class="subscribe-bar">
+            <input type="text" class="subscribe-input" placeholder="Email address">
+            <button type="button" class="subscribe-button" onclick="validateSubscribe()">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+      <div class="container-footer-right">
+        <div class="container-footer-right-1">
+          <span class="footer-titles">QUICK LINKS</span>
+          <ul class="footer-menu">
+            <li><a href="./contact.html" class="footer-menu-links"><span class="footer-menu-text">Contact us</span></a>
+            </li>
+            <li><a href="#" class="footer-menu-links"><span class="footer-menu-text">Careers</span></a></li>
+            <li><a href="#" class="footer-menu-links"><span class="footer-menu-text">Locate us</span></a></li>
+          </ul>
+        </div>
+        <div class="container-footer-right-2">
+          <span class="footer-titles">LEGAL</span>
+          <ul class="footer-menu">
+            <li><a href="#" target="_blank" class="footer-menu-links"><span class="footer-menu-text">Terms and
+                  conditions</span></a></li>
+            <li><a href="#" target="_blank" class="footer-menu-links"><span class="footer-menu-text">Privacy
+                  policy</span></a></li>
+            <li><a href="https://twitter.com/mecookiemonster?lang=en" target="_blank" class="footer-menu-links"><span
+                  class="footer-menu-text">Cookie policy</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="credits">
+      <span class="made-by">Made by ChiefWoods</span>
+      <a class="github-link" href="https://github.com/ChiefWoods/e-commerce" target="_blank"><img
+          src="../icons/github.svg" class="github-icon" alt="icon of GitHub">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

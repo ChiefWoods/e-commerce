@@ -14,7 +14,6 @@ function validateLogin() {
   const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
   if (!(emailRegex.test(emailInput.value))) {
     alert("Invalid email address!")
-    emailInput.value = "";
   } else if (!(passwordRegex.test(passwordInput.value))) {
     alert("Wrong password!");
     passwordInput.value = "";
