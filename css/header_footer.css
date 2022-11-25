@@ -243,25 +243,27 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .subscribe-input {
-  width: 70%;
-  height: 22.5px;
-  border: 2px solid #bcbcbc;
+  flex: 3;
+  height: 25px;
+  border: 2px solid #b2b2b2;
   outline: none;
   font-size: 15px;
   color: rgb(71, 71, 71);
+  box-sizing: border-box;
 }
 
 .subscribe-input::placeholder {
   font-size: 12.5px;
+  margin-left: 3px;
 }
 
 .subscribe-button {
-  width: 100px;
-  height: 28px;
-  float: right;
+  flex: 1;
+  height: 25px;
   font-size: 15px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 1.2px;
@@ -273,7 +275,7 @@ footer {
 }
 
 .subscribe-button:hover {
-  color: #0c803e;
+  color: var(--campagna-green);
   background-color: white;
 }
 
