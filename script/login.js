@@ -1,3 +1,5 @@
+var loggedIn = false, username = "";
+
 function togglePassword() {
   const passwordInput = document.querySelector(".password-input");
   if (passwordInput.type === "password") {
@@ -19,7 +21,23 @@ function validateLogin() {
     passwordInput.value = "";
   } else {
     alert("Login successful.");
+    username = emailInput.value;
     emailInput.value = "";
     passwordInput.value = "";
+    appendWelcome();
+  }
+}
+
+function appendWelcome() {
+  if (!loggedIn) {
+    const container = document.querySelector(".container-main");
+    const welcome = document.createElement("span");
+    welcome.textContent = "Welcome back " + username + "!";
+    document.querySelector(".main-section").insertBefore(welcome, container);
+    welcome.classList.add("welcome");
+    loggedIn = true;
+  } else {
+    const welcome = document.querySelector(".welcome");
+    welcome.textContent = "Welcome back " + username + "!";
   }
 }

@@ -124,3 +124,13 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--pasta-yellow);
 }
+
+.welcome {
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--pasta-yellow);
+  display: block;
+  margin-top: 25px;
+  margin-left: 12%;
+  font-weight: bold;
+}
