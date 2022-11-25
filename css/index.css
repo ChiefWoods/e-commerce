@@ -1,3 +1,8 @@
+html {
+  --tomato: #AE2E07;
+  --olive: #C99822;
+}
+
 header {
   position: fixed;
 }
@@ -118,69 +123,118 @@ hr {
 .products {
   display: flex;
   justify-content: center;
-  width: 80%;
+  align-items: center;
   margin: 75px auto;
-  flex-wrap: wrap;
 }
 
-@media (max-width: 1200px) {
-  .products {
-    flex-direction: column;
-    gap: 0px;
-    width: 70%;
-  }
-
-  .container-products-right {
-    flex-direction: column;
-  }
+.container-products {
+  width: 70%;
+  /* display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 450px repeat(2, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 25px; */
+  display: flex;
+  gap: 30px;
 }
+
+/* @media (max-width: 1300px) {
+  .container-products {
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: repeat(3, 250px);  
+  }
+} */
 
 .container-products-left {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  gap: 50px;
-  margin: 25px;
+  gap: 30px;
+  min-width: 450px;
 }
 
-.container-products-right {
-  flex: 1;
-  display: flex;
-  align-items: stretch;
-  gap: 50px;
-  margin: 25px;
-}
+@media (max-width: 1250px) {
+  .container-products {
+    flex-direction: column;
+  }
 
-.container-long,
-.container-short,
-.container-sauces,
-.container-oils {
-  padding: 10px;
-  padding-left: 20px;
+  .container-products-sauces::before {
+    background-image: url(../images/index/sauces2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .products-box {
+    min-width: 450px;
+  }
 }
 
 .products-box {
-  padding: 10px;
+  padding: 20px;
+  padding-left: 27.5px;
   position: relative;
-  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .products-box::before {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   opacity: 0.8;
   transition: all 0.35s ease-in-out;
 }
 
-.products-box:hover:before {
+.products-box:hover::before {
   opacity: 1;
   transform: scale(1.05);
+}
+
+/* .container-products-long {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.container-products-short {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.container-products-sauces {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.container-products-oils {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+} */
+
+.container-products-long::before {
+  background-image: url(../images/index/long_pasta.jpg);
+  background-position: center;
+}
+
+.container-products-short::before {
+  background-image: url(../images/index/short_pasta.jpg);
+  background-position: center;
+}
+
+.container-products-sauces::before {
+  background-image: url(../images/index/sauces2.jpg);
+  background-position: top 35%;
+  background-size: cover;
+}
+
+.container-products-oils::before {
+  background-image: url(../images/index/olive_oil2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .products-title {
@@ -188,6 +242,7 @@ hr {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: aliceblue;
   letter-spacing: 1.2px;
+  margin-bottom: 5px;
 }
 
 .products-text {
@@ -195,66 +250,48 @@ hr {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: azure;
   line-height: 27.5px;
+  margin-bottom: 30px;
 }
 
-.products-long::before {
-  background-image: url(../images/index/long_pasta.jpg);
-  background-position: center;
-  background-size: cover;
+.products-link {
+  width: fit-content;
 }
 
-.products-short::before {
-  background-image: url(../images/index/short_pasta.jpg);
-  background-position: center;
-  background-size: cover;
+.product-button {
+  margin: 0px;
+  color: whitesmoke;
 }
 
-.products-sauces::before {
-  background-image: url(../images/index/sauces2.jpg);
-  background-position: bottom 30% left 20%;
-  background-size: cover;
-}
-
-.products-oils::before {
-  background-image: url(../images/index/olive_oil2.jpg);
-  background-position: bottom 20% left 55%;
-  background-size: cover;
+.product-button:hover {
+  border: 3px solid whitesmoke;
+  background-color: whitesmoke;
 }
 
 .long-button,
 .short-button {
-  border: 3px solid whitesmoke;
-  background-color: whitesmoke;
-  color: rgb(23, 23, 23);
+  border: 3px solid rgb(19, 19, 19);
+  background-color: rgb(19, 19, 19);
 }
 
 .long-button:hover,
 .short-button:hover {
-  border: 3px solid rgb(23, 23, 23);
-  background-color: rgb(23, 23, 23);
-  color: whitesmoke;
+  color: rgb(19, 19, 19);
 }
 
 .sauces-button {
-  border: 3px solid rgb(192, 46, 46);
-  background-color: rgb(192, 46, 46);
-  color: whitesmoke;
+  border: 3px solid var(--tomato);
+  background-color: var(--tomato);
 }
 
 .sauces-button:hover {
-  border: 3px solid whitesmoke;
-  background-color: whitesmoke;
-  color: rgb(192, 46, 46);
+  color: var(--tomato);
 }
 
 .oils-button {
-  border: 3px solid #baa23e;
-  background-color: #baa23e;
-  color: whitesmoke;
+  border: 3px solid var(--olive);
+  background-color: var(--olive);
 }
 
 .oils-button:hover {
-  border: 3px solid whitesmoke;
-  background-color: whitesmoke;
-  color: #baa23e;
+  color: var(--olive);
 }
