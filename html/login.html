@@ -18,21 +18,28 @@
       <div class="container-nav-top">
         <form action="" method="get" class="search-bar" spellcheck="false">
           <input type="text" class="search-input" placeholder="Search">
-          <button type="submit" class="search-button" onclick="deadButton()"><img src="../icons/magnifying-glass-solid.svg" id="search-icon"
-            alt="icon of magnifying glass"></button>
+          <button type="submit" class="search-button" onclick="deadButton()"><img
+              src="../icons/magnifying-glass-solid.svg" id="search-icon" alt="icon of magnifying glass"></button>
         </form>
         <ul class="container-nav-icons">
-          <li><a href="./cart.html" class="nav-icons-links"><img src="../icons/cart-shopping-solid.svg"
-                class="nav-icons" alt="icon of shopping cart"></a></li>
-          <li><a href="./login.html" class="nav-icons-links"><img src="../icons/user-solid.svg" class="nav-icons"
+          <li><a href="./cart.html" class="nav-icon-links"><img src="../icons/cart-shopping-solid.svg"
+                class="nav-icon" alt="icon of shopping cart"></a></li>
+          <li><a href="./login.html" class="nav-icon-links"><img src="../icons/user-solid.svg" class="nav-icon"
                 alt="icon of user symbol"></a>
           </li>
         </ul>
       </div>
       <ul class="container-nav-bottom">
-        <li><a href="./about.html" class="nav-links"><span class="nav-text">ABOUT</span></a></li>
-        <li><a href="./products.html" class="nav-links"><span class="nav-text">PRODUCTS</span></a></li>
-        <li><a href="./recipes.html" class="nav-links"><span class="nav-text">RECIPES</span></a></li>
+        <li><a href="./about.html" class="nav-link"><span class="nav-text">ABOUT</span></a></li>
+        <li class="dropdown"><a href="./products.html" class="nav-link"><span class="nav-text">PRODUCTS</span></a>
+          <div class="dropdown-content">
+            <a href="./long_pasta.html" class="dropdown-link">LONG PASTA</a>
+            <a href="./short_pasta.html" class="dropdown-link">SHORT PASTA</a>
+            <a href="./sauces.html" class="dropdown-link">SAUCES</a>
+            <a href="./olive_oil.html" class="dropdown-link">OLIVE OILS</a>
+          </div>
+        </li>
+        <li><a href="./recipes.html" class="nav-link"><span class="nav-text">RECIPES</span></a></li>
       </ul>
     </nav>
   </header>
