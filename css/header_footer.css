@@ -40,7 +40,7 @@ header {
   z-index: 2;
 }
 
-header > * {
+header>* {
   opacity: 1;
 }
 
@@ -73,12 +73,12 @@ nav {
   margin-block: 25px;
 }
 
-.container-nav-bottom > li {
+.container-nav-bottom>li {
   list-style-type: none;
   padding-inline: 30px;
 }
 
-.container-nav-bottom > li:nth-last-child(2) {
+.container-nav-bottom>li:nth-last-child(2) {
   border-left: 4px solid black;
   border-right: 4px solid black;
 }
@@ -88,17 +88,17 @@ nav {
   padding: 0px;
 }
 
-.container-nav-icons > li {
+.container-nav-icons>li {
   list-style-type: none;
   margin-inline: 20px;
 }
 
-.nav-icons {
+.nav-icon {
   height: 25px;
   width: 25px;
 }
 
-.nav-links {
+.nav-link {
   text-decoration: none;
   color: black;
 }
@@ -113,6 +113,59 @@ nav {
 
 .nav-text:hover {
   color: #007332;
+}
+
+/* Dropdown */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(234, 234, 234, 0.55);
+  padding-inline: 35px;
+  width: max-content;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  right: 0px;
+  left: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation-name: slideDown;
+  animation-duration: 0.25s;
+}
+
+.dropdown-link {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: black;
+  margin-block: 12.5px;
+}
+
+.dropdown-link:hover {
+  color: #007332;
+  text-decoration: underline;
+  text-decoration-thickness: 1.75px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0.3;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /* Search bar */
@@ -134,8 +187,8 @@ nav {
   outline: none;
   background-color: transparent;
   font-size: 19px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:#006B2D;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #006B2D;
   letter-spacing: 1.3px;
 }
 
@@ -171,7 +224,7 @@ footer {
   height: auto;
   position: relative;
   bottom: 0px;
-  background-color:#d9d9d9;
+  background-color: #d9d9d9;
   z-index: 2;
 }
 
@@ -218,7 +271,7 @@ footer {
   padding: 0px;
 }
 
-.social-links > li {
+.social-links>li {
   list-style-type: none;
   padding-inline: 15px;
 }
@@ -291,7 +344,7 @@ footer {
   padding: 0px;
 }
 
-.footer-menu > li {
+.footer-menu>li {
   list-style-type: none;
   padding-block: 7.5px;
 }
