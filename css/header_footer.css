@@ -36,7 +36,7 @@ header {
   height: auto;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(234, 234, 234, 0.55);
+  background-color: rgba(234, 234, 234, 0.75);
   z-index: 2;
 }
 

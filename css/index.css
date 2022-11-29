@@ -49,23 +49,36 @@ main {
 /* Intro */
 
 .intro {
+  background-color: rgb(245, 245, 245);
+}
+
+.container-intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(245, 245, 245);
-  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
   margin: 75px;
-  gap: 70px;
+  gap: 60px;
+}
+
+@media (max-width: 1200px) {
+  .container-intro {
+    flex-wrap: wrap;
+  }
 }
 
 .intro-image {
-  width: 550px;
+  width: 600px;
+  /* width: 50%; */
+  min-width: 400px;
   height: auto;
-  max-height: 700px;
+  max-height: 700px;  
 }
 
 .container-intro-right {
-  width: 600px;
+  max-width: 550px; 
+  min-width: 275px;
+  width: auto;
   padding: 20px 30px;
   border: 5px solid var(--campagna-red);
 }
@@ -75,6 +88,7 @@ main {
   font-size: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: var(--campagna-red);
+  margin-bottom: 15px;
 }
 
 .intro-text {
