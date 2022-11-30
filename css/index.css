@@ -56,7 +56,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: nowrap; */
   margin: 75px;
   gap: 60px;
 }
@@ -69,7 +68,6 @@ main {
 
 .intro-image {
   width: 600px;
-  /* width: 50%; */
   min-width: 400px;
   height: auto;
   max-height: 700px;  
