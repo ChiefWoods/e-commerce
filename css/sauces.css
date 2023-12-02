@@ -1,4 +1,4 @@
-html {
+:root {
   --alfredo: #DEC9B6;
   --tomato: #AE2E07;
   --cheese: #CF9251;
@@ -9,7 +9,7 @@ html {
 
 .container-main {
   height: 575px;
-  background-image: url(../images/sauces/main2.jpg);
+  background-image: url(../images/sauces/main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 35%;

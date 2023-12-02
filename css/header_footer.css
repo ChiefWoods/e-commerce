@@ -10,7 +10,7 @@
   transition: all 0.3s ease-out;
 }
 
-html {
+:root {
   --campagna-red: #EE0000;
   --campagna-green: #009641;
   --campagna-white: #ffffff;
